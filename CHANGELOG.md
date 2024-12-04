@@ -4,7 +4,7 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/), and this project adheres to [Semantic Versioning](https://semver.org/).
 
-## [Unreleased]
+<!-- ## [Unreleased]
 
 ### Added
 - Description of a new feature.
@@ -27,12 +27,9 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 ### Security
 - Updated dependency Z to fix a critical vulnerability.
 
----
+--- -->
 
-## [1.0.0] - 2024-10-16
+## [1.0.0] - 2024-12-04
 ### Added
-- Initial stable release.
-- Support for multiple concurrent users.
-
-### Changed
-- Updated design of the login screen.
+- Initial version with boilerplate logic.
+- Support for Amazon Bedrock and Google AI Studio.
