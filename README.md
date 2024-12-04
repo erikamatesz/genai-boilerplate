@@ -12,9 +12,13 @@ Generative AI refers to a branch of artificial intelligence that focuses on crea
 
 It is a service offered by AWS that allows you to build and scale applications powered by Generative AI without the need to manage underlying infrastructure. It provides access to foundation models from several AI providers, enabling developers to use pre-trained models or fine-tune them according to specific needs.
 
+In order to use this service, you need to [create a free account](https://aws.amazon.com/free).
+
 ### What is Google AI Studio?
 
 It is Google's platform for developing, training, and deploying AI models, including LLMs and generative AI systems. It offers a user-friendly interface for experimenting with AI capabilities and integrates seamlessly with Google Cloud's infrastructure. Developers can use it to fine-tune pre-trained models or create custom workflows.
+
+If you have a Gmail account, you can already use the service. If you don’t have one yet, [create one here](https://gmail.com).
 
 ## Getting Started
 
@@ -23,15 +27,15 @@ It is Google's platform for developing, training, and deploying AI models, inclu
 
 If you chose AWS, follow these instructions:
 
-3. In *.env*, fill in `AWS_ACCESS_KEY_ID` and `AWS_SECRET_ACCESS_KEY`.
-4. In *config.py*, fill in `AWS_MODEL_ID`.
+3. In **.env**, fill in `AWS_ACCESS_KEY_ID` and `AWS_SECRET_ACCESS_KEY`.
+4. In **config.py**, fill in `AWS_MODEL_ID`.
 
 If you chose Google, follow these instructions:
 
-3. In *.env*, fill in `GEMINI_API_KEY`.
-4. In *config.py*, fill in `MODEL_NAME`.
+3. In **.env**, fill in `GEMINI_API_KEY`.
+4. In **config.py**, fill in `MODEL_NAME`.
 
-You can now update *main.py* as you wish!
+You can now update **main.py** as you wish!
 
 ## Prompt Manager
 
@@ -39,18 +43,19 @@ It helps you organize and manage your prompts as text files, stored in the `src/
 
 ### How to Use the PromptManager class
 
-1. Create prompt files: Add your prompts as .txt files in the `src/prompt` directory. Each file should contain a template for a prompt with placeholders that can be replaced at runtime.
+1. **Create prompt files:** Add your prompts as .txt files in the `src/prompt` directory. Each file should contain a template for a prompt with placeholders that can be replaced at runtime.
 
-2. Define placeholders in your prompts: You can define placeholders in the prompt text by using curly braces {}. These placeholders will be replaced with specific values when you generate the prompt.
+2. **Define placeholders in your prompts:** You can define placeholders in the prompt text by using curly braces {}. These placeholders will be replaced with specific values when you generate the prompt.
 
 ### Example
 
 `persona.txt`: This prompt defines the persona that the model should assume. The placeholders {role}, {expertise}, and {request} will be replaced dynamically.
 
-File Location: src/prompt/persona.txt
-Content: You are a {role} with experience in {expertise}. {request}
+- **File Location:** src/prompt/persona.txt
+- **Name of the prompt:** persona
+- **Content:** You are a {role} with experience in {expertise}. {request}
 
-You can create as many prompts you want.
+You can create as many prompts you want!
 
 ### Usage
 
